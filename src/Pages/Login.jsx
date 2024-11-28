@@ -36,7 +36,7 @@ const Signup = () => {
         "http://localhost:8080/academia/v1/student/login",
         values
       );
-      alert("Signup successful!");
+      alert("Sign in successful!");
       navigate("/");
       console.log("Response:", response.data);
       await localStorage.setItem("studentId", response.data.studentId);

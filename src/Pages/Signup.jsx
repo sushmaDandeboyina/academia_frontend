@@ -49,20 +49,8 @@ const Signup = () => {
   });
 
   const navigate= useNavigate()
-  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    // try {
-    //   const response = await axios.post(
-    //     "http://localhost:8080/academia/v1/student/create_account",
-    //     values
-    //   );
-    //   alert("Signup successful!");
-    //   navigate("/login")
-    // } catch (error) {
-    //   console.error("Error during signup:", error);
-    //   alert("Failed to sign up. Please try again.");
-    // } finally {
-    //   setSubmitting(false);
-    // }
+  const handleSubmit = async (values) => {
+
     const response = await axios.post(
       "http://localhost:8080/academia/v1/student/create_account",
       values
